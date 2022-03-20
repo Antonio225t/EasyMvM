@@ -1,0 +1,9 @@
+main: "patatavival.Antonio.mvm.Main"
+name: "EasyMvM"
+description: "This controls the MvM part of the server."
+version: 1.0
+authors: [Antonio225, LeoTheGamerFox]
+commands:
+  mvminvasion:
+    description: "A brand new command that allows you to use MvM of TF2 without bugs!"
+    usage: "/<command> (args)"
