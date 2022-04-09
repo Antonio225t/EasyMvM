@@ -1,0 +1,131 @@
+
+##########################################################
+##                    CUSTOM TICKETS                    ##
+##########################################################
+# Inside the "invasions" you can set custom tickets starting by the name!
+# Then you'll put waves in the "waves" object inside your name's ticket.
+# You can have like wave1, wave2, ecc. This will set the amount of waves!
+#
+# The "item" field is for specify when an item with that id is right clicked
+# it will spawn the event and remove that item from the player's inventory.
+#
+# Each waves are customizable with custom rewards as items, credits (if
+# any version of rafradek_tf2_weapons mod is installed). You can set the
+# amount of items and the percentage of appearance like this:
+# - "20 (<- percentage) minecraft:stick 1 (<- item in /give command)".
+#
+# You can set the enemies that will spawn and the percentage of it.
+# For example:
+# "50 (<- percentage):1 (<- kill points) rafradek_tf2_weapons:scout {Robot:1} (<- entity
+# in the /summon command without coordinates)".
+#
+# "count" represents the amount of enemies you need to kill in order
+# to reach the next wave.
+# "maxSpawn" is the max amount of enemies that will be. This means
+# that if for example this is set to 16, there will not be enemies
+# up to 16 but less.
+# "rateSpawn" is the intervall from a spawn to another.
+# "time" is the amount of seconds for a timer. If this is setted
+# then the players must kill all the enemies in this seconds.
+# Otherwise, the invasion will end.
+# "maxDelaySpawn" and "minDelaySpawn" are the values of the amount
+# of enemies that will appear. By default is 1-3.
+# "size" is the size of the "arena". Where the enemies will spawn.
+
+invasions:
+  beginner:
+    name: "Beginner Tour of Duty Ticket"
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      type: RAFRADEK_TF2_WEAPONS_EVENTMAKER
+    waves:
+      wave1:
+        rewards:
+          items:
+            item1:
+            - "20 minecraft:diamond 1"
+            - "40 minecraft:dirt 20"
+            - "50 minecraft:glass 2"
+            item2:
+            - "80 minecraft:redstone 2"
+            - "20 minecraft:sand 3"
+            - "40 minecraft:barrier 4"
+          credits: 700
+        enemies:
+        - "50:1 rafradek_tf2_weapons:scout {Robot:1,Team:2}"
+        - "50:1 rafradek_tf2_weapons:soldier {Robot:1,Team:2}"
+        - "60:1 rafradek_tf2_weapons:pyro {Robot:1,Team:2}"
+        - "50:1 rafradek_tf2_weapons:demoman {Robot:1,Team:2}"
+        - "50:1 rafradek_tf2_weapons:heavy {Robot:1,Team:2}"
+        - "60:1 rafradek_tf2_weapons:engineer {Robot:1,Team:2}"
+        - "55:1 rafradek_tf2_weapons:medic {Robot:1,Team:2}"
+        - "50:1 rafradek_tf2_weapons:sniper {Robot:1,Team:2}"
+        - "56:1 rafradek_tf2_weapons:spy {Robot:1,Team:2}"
+        count: 10
+        maxSpawn: 16
+        rateSpawn: 4
+        timer: 500
+        size: 20
+      wave2:
+        count: 13
+        size: 20
+      wave3:
+        count: 16
+        size: 20
+      wave4:
+        count: 18
+        size: 20
+      wave5:
+        count: 20
+        size: 20
+      wave6:
+        count: 25
+        size: 20
+
+
+##########################################################
+##                        OTHERS                        ##
+##########################################################
+# The chance of an invasion appearance when the day comes. (0-100)
+# Set 0 to disable.
+randomChance: 2
+
+# This will say "Rewards:" even when there are no rewards set.
+sendRewardsEvenWhenNoRewards: false
+
+credits:
+  # If true, this will use the money of the rafradek_tf2_weapons mod.
+  # YOU NEED TO RUN THIS WITH ANY VERSION OF THE RAFRADEK MOD IN ORDER TO WORK!
+  useTF2CreditsItems: true
+  
+  # If not, you can set the credits as you wish.
+  items:
+    # Example: "minecraft:diamond (<- item) 0 (<- data value), {} (<- NBT tags)".
+    # For data values: [https://minecraft-archive.fandom.com/wiki/Data_Values] sponge and wet sponge.
+    large: "minecraft:diamond" #81 credits.
+    medium: "minecraft:gold_ingot" #9 credits.
+    small: 'minecraft:iron_ingot 0 {display:{Name:"{\"text\":\"Small credit pack\"}"}}' #1 credit.
+
+counting:
+  # This section is for the sounds when the wave starts (3, 2, 1, start)
+  # If enabled is true, then those are going to be used.
+  enabled: true
+  # "sound" is the id of the sound to play. https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Sound.html
+  # "volume" is how strong the player will hear the sound.
+  # "pitch" is the pitch of the sound that will be played.
+  3:
+    sound: "BLOCK_NOTE_PLING"
+    volume: 1
+    pitch: 0
+  2:
+    sound: "BLOCK_NOTE_PLING"
+    volume: 1
+    pitch: 0
+  1:
+    sound: "BLOCK_NOTE_PLING"
+    volume: 1
+    pitch: 0
+  start:
+    sound: "BLOCK_NOTE_PLING"
+    volume: 1
+    pitch: 2

@@ -1,0 +1,29 @@
+mvminvasion.usage=&cUso: /mvminvasion [spawn|stop|reload]
+
+mvminvasion.reload=&7File config ricaricato con successo!
+
+mvminvasion.spawn.usage=&cUso: /mvminvasion spawn [nome] OPPURE /mvminvasion spawn [nome] [x, y, z]
+mvminvasion.spawn.ticketnotfound=&cIl ticket &7%0&c non esiste!
+
+mvminvasion.setitem.usage=&cUso: /mvminvasion setItem [nome]
+mvminvasion.setitem.success=&6L'oggetto nella tua mano è stato inserito come attivatore del ticket &7%0&6!
+mvminvasion.setitem.reset=&6L'oggetto che attivava il ticket &7%0&6 è stato rimosso!
+
+invasion.stopped=L'invasione è stata fermata!
+invasion.getrewards=&6Sei stato ricompensato:
+invasion.reward=%0
+invasion.credits=Crediti: %0
+invasion.triggeredItem=%0 ha attivato %1!
+invasion.spawned=Invasione iniziata a %0 %1 %2!
+
+invasion.count.3=&63
+invasion.count.3d=&r
+invasion.count.2=&62
+invasion.count.2d=&r
+invasion.count.1=&61
+invasion.count.1d=&r
+invasion.count.start=&6Inizio!
+invasion.count.startd=&8Sconfiggi tutti i nemici per ottenere ricompense.
+
+nopermissions=&cNon hai il permesso di usare questo comando!
+noconsolecommand=&cNon puoi usare questo comando dalla console!

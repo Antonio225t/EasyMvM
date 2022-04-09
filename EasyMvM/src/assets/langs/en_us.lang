@@ -1,0 +1,29 @@
+mvminvasion.usage=&cUsage: /mvminvasion [spawn|stop|reload]
+
+mvminvasion.reload=&7Config successfully reloaded!
+
+mvminvasion.spawn.usage=&cUsage: /mvminvasion spawn [name] OR /mvminvasion spawn [name] [x, y, z]
+mvminvasion.spawn.ticketnotfound=&cThe ticket with name &7%0&c doesn't exists!
+
+mvminvasion.setitem.usage=&cUsage: /mvminvasion setItem [name]
+mvminvasion.setitem.success=&6The item in your hand has been added as switch to the ticket &7%0&6!
+mvminvasion.setitem.reset=&6The item that activates &7%0&6's ticket has been removed!
+
+invasion.stopped=The invasion has been stopped!
+invasion.getrewards=&6You were awarded:
+invasion.reward=%0
+invasion.credits=Credits: %0
+invasion.triggeredItem=%0 has activated %1!
+invasion.spawned=Invasion started at %0 %1 %2!
+
+invasion.count.3=&63
+invasion.count.3d=&r
+invasion.count.2=&62
+invasion.count.2d=&r
+invasion.count.1=&61
+invasion.count.1d=&r
+invasion.count.start=&6Start!
+invasion.count.startd=&8Defeat all the enemies for rewards.
+
+nopermissions=&cYou don't have the permission for perform this command!
+noconsolecommand=&cYou cannot send this command from the console!
